@@ -1,45 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAKANAKA</title>
-    <!-- font family link up -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tailwindcss link up -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwindcss Custom css -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                Yellow: '#FECC02',
-                black: '#131313',
-                gray: '#4E4E4E',
-              },
-              fontfamily:{
-                bebas: ['Bebas Neue', 'cursive'],
-                montserrat: ['Montserrat', 'sans-serif'],
-              },
-            },
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAKANAKA</title>
+  <!-- font family link up -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Tailwindcss link up -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwindcss Custom css -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Yellow: '#FECC02',
+            blackit: '#131313',
+            gray: '#4E4E4E',
           },
-        };
-      </script>
+          fontfamily: {
+            bebas: ['Bebas Neue', 'cursive'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
 </head>
+
 <body>
   <header>
-    <nav>
-      <h1 class="text-3xl text-black font-normal font-bebas" >Jhaka Naka Production</h1>
+    <!-- nav section start -->
+    <nav class="bg-white left-0 right-0 top-0 fixed border-b-2 border-yellow-500">
+      <div
+        class="md:flex justify-between text-center  items-center h-24 w-full max-w-7xl px-5 mx-auto font-bebas font-semibold uppercase">
+        <h1 class="text-2xl pb-4 pt-3 md:text-3xl text-blackit">Jaka Naka Production</h1>
+        <ul class="flex text-base justify-center pb-5 md:text-xl gap-4 md:gap-6">
+          <li><a class="hover:underline hover:opacity-75" href="">About US </a></li>
+          <li><a class="hover:underline hover:opacity-75" href="">our Movies</a></li>
+          <li><a class="hover:underline hover:opacity-75" href="">Services</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
+    <!-- banner section start  -->
+    <section class="">
+      <div class="h-screen bg-[url('../images/banner.jpg')] bg-cover bg-no-repeat pt-24">
+        <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+          <div class="font-bebas text-white">
+            <h3 class="text-base md:text-xl uppercase">Movie production studio</h3>
+            <h1 class="text-5xl md:text-7xl uppercase">Films Made to</h1>
+            <h1 class="text-5xl md:text-7xl text-Yellow uppercase pb-5">Perfection</h1>
+            <p class="max-w-lg pb-9 font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus,
+              luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button
+              class="text-lg font-serif border-2 sm:border-4 border-white hover:bg-Yellow hover:text-blackit transition py-2 px-5 sm:py-3 sm:px-6">Discover
+              More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+    <!-- FIlming Experience ABOUT section start -->
+    <section class="py-40 mx-5">
+      <!-- camera man and content site -->
+      <div class="border-4 border-gray w-full max-w-7xl mx-auto">
+        <div class="md:flex p-5 mb-7">
+          <div class="md:w-1/2 p-7 h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover bg-center flex justify-center items-center">
+              <h1 class="shadow-lg bg-white text-2xl text-black w-full text-center font-semibold uppercase mx-5 px-5 py-7 rounded-md -mb-[29rem]">
+                23 YEARS of EXPERIENCE
+              </h1>
+          </div>
+          <div class="md:w-1/2 p-7 font-bebas">
+            <h3 class="font-bold md:text-xl uppercase">ABOUT US</h3>
+            <h1 class="text-5xl md:text-5xl font-semibold uppercase inline-block">FIlming Experience</h1>
+            <h1 class="text-5xl font-semibold md:text-6xl pb-5 pt-2 uppercase">Just Got better</h1>
+            <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto sequi praesentium,
+              assumenda culpa voluptatum tempore dolor molestiae exercitationem corporis consequuntur similique sed quo
+              magni tempora aliquam soluta dolore explicabo!</p>
+            <button
+              class="text-lg font-serif border-2 border-blackit hover:bg-Yellow hover:text-blackit transition py-2 px-5 sm:py-3 sm:px-6">Discover
+              More</button>
+          </div>
+        </div>
+        <!-- vlog site -->
+        <div class="grid grid-cols-1 md:grid-cols-3 p-5 pb-7 gap-5">
+          <div>
+            <div class=" h-1.5 bg-black w-full mb-5"></div>
+            <h1 class="text-5xl text-blackit font-semibold pb-3 uppercase">OUR VISIOn</h1>
+            <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+              ullamcorper mattis, pulvinar dapibus leo..</p>
+          </div>
+          <div class="">
+            <div class=" h-1.5 bg-black w-full mb-5"></div>
+            <h1 class="text-5xl text-blackit font-semibold pb-3 uppercase">OUR Mission</h1>
+            <p class="text-black">Malesuada tempus et habitant nascetur porta nec. Fusce consequat risus per
+              sollicitudin hendrerit suscipit convallis sociosqu.</p>
+          </div>
+          <div class="">
+            <div class=" h-1.5 bg-black w-full mb-5"></div>
+            <h1 class="text-5xl text-blackit font-semibold pb-3 uppercase">OUR Motto</h1>
+            <p class="text-black">“We don’t make movies to make money, we make money to make more movies.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIlming Experience ABOUT section end -->
 
+    <!-- Movie collection section start -->
+    <section class="bg-gray py-20">
+      <div class="w-full max-w-7xl mx-auto">
+        <h5 class="text-white mx-4">OUR MOVIES</h5>
+        <div class="md:flex justify-between mx-4 pb-6">
+          <h2 class="text-5xl md:text-7xl text-white pb-5 font-semibold">Movie collection</h2>
+          <button class="text-lg font-serif border-2 text-white border-white transition py-2 px-5 sm:py-3 sm:px-4 uppercase">See
+            More Movies</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-5 pt-10">
+          <div class="border-4 border-white h-[450px] md:h-[550px] lg:h-[400px] p-5">
+            <div class="h-full bg-[url('./images/tenet.jpg')] bg-cover bg-center">
+            </div>
+          </div>
+          <div class="border-4 border-white h-[450px] md:h-[550px] lg:h-[400px] p-5">
+            <div class=" h-full w-full bg-[url('./images/inception.jpg')] bg-cover bg-center">
+            </div>
+          </div>
+          <div class="border-4 border-white h-[450px] md:h-[550px] lg:h-[400px] p-5">
+            <div class=" h-full w-full bg-[url('./images/interstellar.jpg')] bg-cover bg-center">
+            </div>
+          </div>
+          <div class="border-4 border-white h-[450px] md:h-[550px] lg:h-[400px] p-5">
+              <div class=" h-full w-full bg-[url('./images/inception.jpg')] bg-cover bg-center">
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
   </footer>
-    
+
 </body>
+
 </html>
